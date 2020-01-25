@@ -1,0 +1,20 @@
+<table class="table table-hover">
+    <thead>
+        <th>Employee Code</th>
+        <th>FirstName</th>
+        <th>LastName</th>
+        <th>Designation</th>
+        <th>Mobile Number</th>
+        <th>Delete</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let employeeData of list" (click)="onEditData(employeeData)">
+            <td>{{employeeData.empCode}}</td>
+            <td>{{employeeData.firstName}}</td>
+            <td>{{employeeData.lastName}}</td>
+            <td>{{employeeData.designation}}</td>
+            <td>{{employeeData.mobileNumber}}</td>
+            <td><a class="btn btn-danger" (click)="onDelete(employeeData.id)"><i class="fa fa-trash"></i></a></td>
+        </tr>
+    </tbody>
+</table>

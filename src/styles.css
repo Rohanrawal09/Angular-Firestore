@@ -1,0 +1,15 @@
+input.ng-touched.ng-invalid{
+    border-block: #DC3545;
+}
+
+div.validation-error{
+    width: 100%;
+    margin-top: .25rem;
+    margin-bottom: 10px;
+    font-size: 80%;
+    color: #DC3545;
+}
+
+table.table-hover tbody tr:hover{
+    cursor: pointer;
+}
